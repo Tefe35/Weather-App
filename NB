@@ -1,0 +1,71 @@
+recomended tool in chrome for developers =
+React Developer Tools(install it)
+
+STEPS 
+*****
+1.npx create-react-app weather_app(create react boiler plate )
+2.cleaning un necessary folders and files
+3.create components(navbar, userlocation)
+
+4.go to (flexbox grid) and copy the link include to index.html that allows to flexgrid
+
+5.npm i axios(Axios is a library that helps us make http requests to external resources. In our React applications we often need to retrieve data from external APIs so it can be displayed in our web pages)
+
+6.API Authentication(weatherstack is an exceptional API service that provides accurate weather data for millions of locations around the world. ... weatherstack provides real-time, historical, and even forecast data up to 14 days in advance)
+(sign up weatherstack.com 
+click on dashbord and your API is:-8dc215ffe76001dc9762c59b48f39424)
+
+
+On documentation, grab or coppy
+(http://api.weatherstack.com/current
+    ? access_key = YOUR_ACCESS_KEY
+    & query = New York
+)
+how to request weather information
+***********************************
+    http://api.weatherstack.com/current?access_key=8dc215ffe76001dc9762c59b48f39424&query=SAINT LOUIS
+
+
+    RESPONSE
+    ********
+    {
+"request": {
+"type": "City",
+"query": "Saint Louis, United States of America",
+"language": "en",
+"unit": "m"
+},
+"location": {
+"name": "Saint Louis",
+"country": "United States of America",
+"region": "Missouri",
+"lat": "38.627",
+"lon": "-90.198",
+"timezone_id": "America/Chicago",
+"localtime": "2021-01-09 19:37",
+"localtime_epoch": 1610221020,
+"utc_offset": "-6.0"
+},
+"current": {
+"observation_time": "01:37 AM",
+"temperature": -1,
+"weather_code": 122,
+"weather_icons": [
+"https://assets.weatherstack.com/images/wsymbols01_png_64/wsymbol_0004_black_low_cloud.png"
+],
+"weather_descriptions": [
+"Overcast"
+],
+"wind_speed": 11,
+"wind_degree": 320,
+"wind_dir": "NW",
+"pressure": 1029,
+"precip": 0,
+"humidity": 75,
+"cloudcover": 100,
+"feelslike": -5,
+"uv_index": 1,
+"visibility": 16,
+"is_day": "no"
+}
+}
